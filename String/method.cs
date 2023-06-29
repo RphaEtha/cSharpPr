@@ -86,5 +86,13 @@ IsUpper, IsLower: 문자열이 모두 대문자인지 또는 소문자인지 확
   string str2 = "hello";
   bool isUpper = str1.IsUpper(); // true
   bool isLower = str2.IsLower(); // true
+  for (int i = 0; i < str1.Length; i++){
+    if (char.IsLower(str1[i])){
+      result += str1[i].ToUpper();
+    }
+    else{
+      result += str1[i].ToLower();
+    }
+  }
 
 
